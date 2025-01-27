@@ -1,0 +1,178 @@
+/* General Styles */
+.rides-list-container {
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  box-sizing: border-box; /* Ensure proper box sizing */
+}
+
+/* Hero Section */
+.rides-list-container .hero-section {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Prevent overflow */
+  overflow: hidden; /* Ensure no horizontal scroll */
+}
+
+.rides-list-container .hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: aliceblue;
+}
+
+.rides-list-container .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+/* Search Bar */
+.rides-list-container .search-input {
+  padding: 0.5rem;
+  width: 90%; /* Ensure it fills the available space */
+  max-width: 400px; /* Max width for larger screens */
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+/* Ride Card Section */
+.rides-list-container .rides-list-section {
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hides horizontal scrollbar */
+}
+
+.rides-list-container .rides-list-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.rides-list-container .rides-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Ride Cards Container */
+.rides-list-container .rides-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Account for padding */
+}
+
+.rides-list-container .rides-container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Ride Card */
+.rides-list-container .ride-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  max-width: 300px;
+  flex-shrink: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Ride Card Info */
+.rides-list-container .ride-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.rides-list-container .ride-actions {
+  margin-top: 1rem;
+}
+
+/* Button Styles */
+.rides-list-container .know-more-button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.rides-list-container .know-more-button:hover {
+  background-color: #1e5bd6;
+}
+
+/* Arrow Button Styles */
+.rides-list-container .scroll-button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensures buttons appear above other elements */
+}
+
+.rides-list-container .scroll-button:hover {
+  background: #1e5bd6;
+}
+
+.rides-list-container .scroll-left {
+  left: 10px; /* Ensure it is fully visible on the left */
+}
+
+.rides-list-container .scroll-right {
+  right: 10px; /* Ensure it is fully visible on the right */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .rides-list-container .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .rides-list-container .hero-content p {
+    font-size: 1rem;
+  }
+
+  .rides-list-container .rides-container {
+    gap: 0;
+    justify-content: center;
+    width: 100%; /* Ensure full width */
+    padding: 0 1rem; /* Ensure no overflow */
+  }
+
+  .rides-list-container .ride-card {
+    min-width: 100%; /* Full width on small screens */
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .rides-list-container .scroll-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rides-list-container .scroll-left {
+    left: 5px;
+  }
+
+  .rides-list-container .scroll-right {
+    right: 5px;
+  }
+}

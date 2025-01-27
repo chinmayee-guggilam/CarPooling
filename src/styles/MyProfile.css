@@ -1,0 +1,177 @@
+/* Root element specific to MyProfile */
+.my-profile {
+  --primary-color: #4a90e2;
+  --secondary-color: #357ab7;
+  --background-color: #f4f7fc;
+  --text-color: #333;
+  --button-hover-color: #357ab7;
+  --input-border-color: #ddd;
+  --focus-border-color: #4a90e2;
+}
+
+/* General styles for the MyProfile component */
+.my-profile * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-profile body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.my-profile .profile-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.my-profile .profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.my-profile h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.my-profile .profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.my-profile .profile-field label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.my-profile .profile-field input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.my-profile .profile-field input:focus {
+  border-color: var(--focus-border-color);
+}
+
+.my-profile .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--input-border-color);
+}
+
+.my-profile .profile-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.my-profile button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-profile button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.my-profile button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.my-profile .error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-profile .profile-container {
+    padding: 1rem;
+  }
+
+  .my-profile .profile-info {
+    gap: 1rem;
+  }
+
+  .my-profile .profile-field label {
+    font-size: 0.9rem;
+  }
+
+  .my-profile .profile-field input {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .my-profile .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .my-profile button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .my-profile .profile-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-profile .profile-container {
+    padding: 0.5rem;
+  }
+
+  .my-profile .profile-info {
+    gap: 0.8rem;
+  }
+
+  .my-profile .profile-field label {
+    font-size: 0.8rem;
+  }
+
+  .my-profile .profile-field input {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .my-profile .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .my-profile button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}

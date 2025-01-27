@@ -1,0 +1,84 @@
+.my-rides-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    align-items: center;
+    max-width: 1000px;
+    margin-top:40px;
+  }
+  
+  .my-rides-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .my-rides-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  .my-rides-table th,
+  .my-rides-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .my-rides-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .my-rides-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .my-rides-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .my-rides-table .completed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .my-rides-table .pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    margin: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: #e60000;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .my-rides-table th,
+    .my-rides-table td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .my-rides-table th:nth-child(6),
+    .my-rides-table td:nth-child(6) {
+      display: none; /* Hide the "No. of Seats" column on small screens */
+    }
+  
+    .my-rides-table th,
+    .my-rides-table td {
+      padding: 8px 5px;
+    }
+  }
+  

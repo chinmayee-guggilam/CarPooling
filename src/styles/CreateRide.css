@@ -1,0 +1,55 @@
+.create-ride-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-ride-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-ride-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-ride-form input,
+.create-ride-form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-ride-form button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-ride-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.create-ride-form .pet-allowance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-ride-form .error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
